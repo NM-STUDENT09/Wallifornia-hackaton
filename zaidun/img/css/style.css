@@ -1,0 +1,75 @@
+
+
+
+
+   
+header {
+    height: 70vh;
+   border: 1px  solid black;
+   
+}
+#rightDid{
+    width: 50%;
+    height: 70vh;
+float : right ;
+display: inline-block;
+}
+#leftDiv{
+width: 50%; 
+height: 70vh;
+}
+#logo {
+width: 60%;
+position: relative;
+margin:  10% 1% 1% 16%;
+display: inline-block;
+float: left;
+}
+#riotgames{
+width: 20%
+}
+
+#finderIcon{
+width: 7%;
+margin-left : 7%
+}
+#darkblue{
+width : 35%;
+}#sticker{
+width: 20%;
+display: inline-block;
+}
+
+#riot{
+display: block;
+width: 100%;
+}
+#leagueoflegend{
+font-size: 45px;
+font-family: 'Poppins', sans-serif;
+}
+#riot img{
+display: inline-block;
+margin-left: 5%;
+width: 15%;
+}
+#follow{
+font-size:15px ;
+    border : none;
+margin-top: 20px;
+display: block;
+padding: 8px 20px;
+color: white;
+background: #220E26;
+border-radius: 12px;
+
+}
+#riot p {
+font-family: 'Raleway', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 28px;
+display: inline-block;
+color: #220E26;
+}
+

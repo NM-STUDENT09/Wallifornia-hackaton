@@ -23,16 +23,16 @@
       </div>
       <nav class="nav_game">
         <ul>
-          <li><a href="#my_info">-Info par default.</a></li>
-          <li><a href="#page_tech">-Page jeux.</a></li>
-          <li><a href="#page_platform">-Info streamer/Gamers.</a></li>
+         <li><button id="button1" onclick="showHideElement(1)">Info par default</button></li> 
+         <li><button id="button1" onclick="showHideElement(2)">Page jeux</button></li> 
+         <li><button id="button1" onclick="showHideElement(3)">Info streamer/Gamers</button></li> 
         </ul>
       </nav>
     </header>
-    <div id="my_info" class="my_info">
+    <div id="divArticle1" class="my_info">
       <p>1)-INFO DESCRIPTION.</p>
     </div>
-    <div id="page_tech" class="page_tech">
+    <div id="divArticle2" class="page_tech">
       <div class="bar_tech">
         <p>2)-BAR TECH.</p>
       </div>
@@ -45,7 +45,7 @@
         </div>
       </div>
     </div>
-    <div id="page_platform" class="page_platform">
+    <div id="divArticle3" class="page_platform">
       <div class="bar_game">
         <p>3&4)-BARRE GAME.</p>
       </div>
@@ -53,5 +53,40 @@
         <p>3&4)-Platforme Joueur & Streamer.</p>
       </div>
     </div>
+
   </body>
+  
+  <script>
+ /**
+  * 8/7/2020
+  * @zaidun   
+  **/
+ window.onload = function() {
+    hideElement();
+};
+
+function hideElement()
+{
+    document.getElementById("divArticle1").style.display="none";        
+    document.getElementById("divArticle2").style.display="none";        
+    document.getElementById("divArticle3").style.display="none";        
+}
+
+function showHideElement(idNumber)
+{
+    hideElement();
+
+    let divArticle = document.getElementById("divArticle"+idNumber);        
+
+    if (divArticle.style.display == "none") 
+    {
+        divArticle.style.display = "block";
+    }else {
+        divArticle.style.display = "none";
+    }
+}
+ 
+
+
+  </script>
 </html>
