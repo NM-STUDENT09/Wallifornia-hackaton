@@ -74,6 +74,9 @@
   .nav_game ul {
     display: flex;
   }
+  .nav_game ul li{
+    list-style:none;
+  }
   .my_info {
     display: flex;
     justify-content: center;
@@ -129,9 +132,9 @@
     background-color: #e6fffb;
   }
   
+/* end of css mohammed + jpaul */
 
-
-
+/* css zaidun */
    
 header {
     height: 70vh;
@@ -151,7 +154,7 @@ height: 70vh;
 #logo {
 width: 60%;
 position: relative;
-margin:  10% 1% 1% 16%;
+margin:  10% 2% 1% 16%;
 display: inline-block;
 float: left;
 }
@@ -166,17 +169,29 @@ margin-left : 7%
 #darkblue{
 width : 35%;
 }#sticker{
-width: 20%;
+    position: relative;
+    margin-top: 8%;
+    margin-left: 6%;
+width: 12%;
 display: inline-block;
 }
 
 #riot{
 display: block;
 width: 100%;
+line-height: 0px;
 }
 #leagueoflegend{
-font-size: 45px;
+font-size: 50px;
 font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: bolder;
+ line-height: 0px;
+ margin-top: 15%;
+ /* identical to box height */
+
+
+color: #220E26;
 }
 #riot img{
 display: inline-block;
@@ -188,11 +203,15 @@ font-size:15px ;
     border : none;
 margin-top: 20px;
 display: block;
-padding: 8px 20px;
+padding: 16px 24px;
 color: white;
 background: #220E26;
 border-radius: 12px;
 
+}
+#follow:hover{
+cursor: pointer;
+color:#43d8c9
 }
 #riot p {
 font-family: 'Raleway', sans-serif;
@@ -203,3 +222,8 @@ display: inline-block;
 color: #220E26;
 }
 
+/*
+
+
+
+*/

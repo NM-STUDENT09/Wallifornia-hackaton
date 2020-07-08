@@ -57,8 +57,8 @@
         </div>
         <div  id="leftDiv">
             <img src="zaidun/img/LOL (2).png" alt="" id="logo">
-            <img src="zaidun/img/187_-_Communication_add_chat_stamp_stickers_patch_sticker_icon-512.png" alt="" id="sticker">
-        </div>
+            <img src="zaidun/img/App Friendly.png" id="sticker"alt="">
+    </div>
     </header>
 
       <nav class="nav_game">
@@ -66,6 +66,7 @@
          <li><button id="button1" onclick="showHideElement(1)">Info par default</button></li> 
          <li><button id="button1" onclick="showHideElement(2)">Page jeux</button></li> 
          <li><button id="button1" onclick="showHideElement(3)">Info streamer/Gamers</button></li> 
+         <li><button id="button1" onclick="showHideElement(4)">Gamers</button></li> 
         </ul>
       </nav>
     </header>
@@ -75,7 +76,7 @@
     <div id="divArticle2" class="page_tech">
       <div class="bar_tech">
         <p>2)-BAR TECH.</p>
-      </div> -->
+      </div>
       <div id="page_tech" class="container_tech">
         <div class="my_tech">
           <p>2)Techniques</p>
@@ -88,12 +89,12 @@
     <div id="divArticle3" class="page_platform">
       <div class="bar_game">
         <p>3&4)-BARRE GAME.</p>
-      </div> -->
+      </div>
       <div class="page_streamers">
         <p>3)Streamers</p>
       </div>
     </div>
-    <div class="page_gamers">
+    <div id="divArticle4" class="page_gamers">
       <p>4)Gamers</p>
     </div>
 
@@ -106,6 +107,9 @@
   **/
  window.onload = function() {
     hideElement();
+    //this code to be changed 
+    document.getElementById("divArticle1").style.display="block";        
+
 };
 
 function hideElement()
@@ -113,6 +117,7 @@ function hideElement()
     document.getElementById("divArticle1").style.display="none";        
     document.getElementById("divArticle2").style.display="none";        
     document.getElementById("divArticle3").style.display="none";        
+    document.getElementById("divArticle4").style.display="none";        
 }
 
 function showHideElement(idNumber)
