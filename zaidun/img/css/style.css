@@ -1,4 +1,134 @@
-
+* {
+    color: #220e26;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+  }
+  body {
+    margin: 0px;
+  }
+  .logo_tfog {
+    height: 6vh;
+  }
+  .block_search {
+    display: flex;
+    align-items: center;
+  }
+  .block_nickname {
+    display: flex;
+    align-items: center;
+  }
+  .block_search i {
+    margin: 1vh;
+  }
+  .block_nickname i {
+    margin: 1vh;
+  }
+  .picto {
+    display: contents;
+  }
+  a {
+    text-decoration: none;
+  }
+  .main_nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #43d8c9;
+    height: 10vh;
+    align-items: center;
+    padding: 3vh 5vh 3vh 5vh;
+  }
+  a:hover,
+  i:hover {
+    color: #e6fffb;
+    text-decoration: none;
+    font-weight: bold;
+    /* font-size: 24px; */
+  }
+  /* .logo_tfog:hover {
+    height: 7vh;
+  } */
+  .container_game {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 400px;
+  }
+  .logo_game {
+    background-color: white;
+    width: 35%;
+    height: auto;
+    text-align: center;
+  }
+  .presentation_game {
+    background-color: #e6fffb;
+    width: 65%;
+    text-align: center;
+  }
+  .nav_game {
+    display: flex;
+    justify-content: center;
+    background-color: #43d8c9;
+    text-align: center;
+    height: 10vh;
+  }
+  .nav_game ul {
+    display: flex;
+  }
+  .my_info {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    background-color: #e6fffb;
+    margin: auto;
+  }
+  /* .bar_tech {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(222, 255, 33);
+    text-align: center;
+  } */
+  .container_tech {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 600px;
+  }
+  .my_tech {
+    background-color: #e6fffb;
+    width: 65%;
+    text-align: center;
+  }
+  .aside_tech {
+    background-color: white;
+    width: 35%;
+    height: auto;
+    text-align: center;
+  }
+  /* .bar_game {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(243, 163, 72);
+    text-align: center;
+  } */
+  .page_streamers {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    background-color: white;
+  }
+  .page_gamers {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    background-color: #e6fffb;
+  }
+  
 
 
 
