@@ -52,7 +52,10 @@ h2 {
 }
 .flux {
   width: 98%;
-  border: 3px solid #220E26;
+  border-top: 3px solid #220E26;
+  border-right: 3px solid #220E26;
+  border-bottom: 3px solid #220E26;
+  border-left: 0px;
   border-radius: 0px 30px 30px 0px;
 }
 .input {
@@ -67,4 +70,13 @@ h2 {
   box-sizing: border-box;
   border-radius: 10px;
   width: 80%;
+  height: 40px;
+  margin-left: 10px;
+}
+.comment2 {
+  background-color: #220E26;
+  border-radius: 10px;
+  width: 80%;
+  height: 40px;
+  margin-left: 10px;
 }
