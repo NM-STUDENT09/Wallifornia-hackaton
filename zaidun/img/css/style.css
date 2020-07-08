@@ -221,6 +221,25 @@ font-size: 28px;
 display: inline-block;
 color: #220E26;
 }
+.nav_game ul li:hover{
+    color:red;
+    background-color: #E6FFFB;
+/*     padding: 3.4vh;
+ */    color:black;
+}
+.nav_game ul li{
+    position: relative;
+    padding: 3.4vh 12.4vh;
+    color:white;
+    border-left:1px solid black;
+}
+.nav_game ul li:first-child{
+    border-left: none;
+}
+.nav_game ul{
+    padding : 0px;
+    margin: auto;
+}
 
 /*
 
