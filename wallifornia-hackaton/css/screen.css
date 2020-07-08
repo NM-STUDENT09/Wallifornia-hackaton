@@ -43,3 +43,40 @@ img {
 .button_right {
   color: #43D8C9;
 }
+.gamer {
+  width: 100px;
+  height: 100px;
+}
+h2 {
+  text-align: center;
+}
+.flux {
+  width: 98%;
+  border-top: 3px solid #220E26;
+  border-right: 3px solid #220E26;
+  border-bottom: 3px solid #220E26;
+  border-left: 0px;
+  border-radius: 0px 30px 30px 0px;
+}
+.input {
+  /* display: inline; */
+}
+.input_img {
+  width: 50px;
+  height: 50px;
+}
+.comment {
+  border: 3px solid #43D8C9;
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 80%;
+  height: 40px;
+  margin-left: 10px;
+}
+.comment2 {
+  background-color: #220E26;
+  border-radius: 10px;
+  width: 80%;
+  height: 40px;
+  margin-left: 10px;
+}
