@@ -105,12 +105,12 @@
     height: 600px;
   }
   .my_tech {
-    background-color: #e6fffb;
-    width: 65%;
+/*     background-color: #e6fffb;
+ */    width: 65%;
     text-align: center;
   }
   .aside_tech {
-    background-color: white;
+    background-color:#E6FFFB;
     width: 35%;
     height: auto;
     text-align: center;
@@ -277,6 +277,7 @@ section {
   .container_page {
     display: flex;
     justify-content: row;
+    background-color: #E6FFFB;
   } */
   .up {
     background-color: blue;
@@ -287,8 +288,9 @@ section {
     height: 300px;
   }
   .my_flux {
-    background-color: #E5E5E5;
-    width: 100%;
+     background-color: #E6FFFB;;
+     width: 100%;
+ margin-top: 5%;
     height: 600px;
   }
   .aside {
@@ -310,10 +312,22 @@ section {
 
 .flux img {
     float : left;
+    margin-left : 2%    
 }
 #header_Technlogie{
     display: block;
+    margin-top: 3%;
+    
 }
+#header_Technlogie i{
+    float: right;
+    margin-right: 2%;
+    
+}
+h3{
+    display: inline-block;
+     margin-right: 61%;
+ }
   h2 {
     text-align: center;
   }
@@ -325,9 +339,13 @@ section {
     border-left: 0px;
     border-radius: 0px 30px 30px 0px;
     background-color: #E6FFFB;
+    
+  }
+  #flux{
   }
   .input {
     /* display: inline; */
+    margin : 2%;
   }
   .input_img {
     width: 50px;
@@ -347,6 +365,43 @@ section {
     width: 80%;
     height: 40px;
     margin-left: 10px;
+  }
+
+  #Desc__Technlogie{
+      margin-top: 3%;
+      padding : 7% ;
+
+  }
+  #Desc__Technlogie p{
+    padding: 0% 10% 0% 10%; 
+    text-align: justify;
+  }
+  #p_technique {
+/*     text-indent: 50px;
+ */
+  }
+  .tech_desc{
+    
+  }
+  .comment2{
+    color:white;
+  }
+  #viewVideo {
+    background: #220E26;
+border-radius: 7px;
+border: none;
+color : white;
+padding:1.5%;
+font-size: 15px;
+margin:3%;
+  }
+  .sotring {
+    display : block;
+    margin : 5%;
+    background: #220E26;
+border-radius: 7px;
+border : none ;
+color : white;
   }
 /*
 
