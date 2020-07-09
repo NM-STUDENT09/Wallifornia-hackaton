@@ -1,0 +1,410 @@
+* {
+    color: #220e26;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+  }
+  body {
+    margin: 0px;
+  }
+  .logo_tfog {
+    height: 6vh;
+  }
+  .block_search {
+    display: flex;
+    align-items: center;
+  }
+  .block_nickname {
+    display: flex;
+    align-items: center;
+  }
+  .block_search i {
+    margin: 1vh;
+  }
+  .block_nickname i {
+    margin: 1vh;
+  }
+  .picto {
+    display: contents;
+  }
+  a {
+    text-decoration: none;
+  }
+  .main_nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #43d8c9;
+    height: 10vh;
+    align-items: center;
+    padding: 3vh 5vh 3vh 5vh;
+  }
+  a:hover,
+  i:hover {
+    color: #e6fffb;
+    text-decoration: none;
+    font-weight: bold;
+    /* font-size: 24px; */
+  }
+  /* .logo_tfog:hover {
+    height: 7vh;
+  } */
+  .container_game {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 400px;
+  }
+  .logo_game {
+    background-color: white;
+    width: 35%;
+    height: auto;
+    text-align: center;
+  }
+  .presentation_game {
+    background-color: #e6fffb;
+    width: 65%;
+    text-align: center;
+  }
+  .nav_game {
+    display: flex;
+    justify-content: center;
+    background-color: #43d8c9;
+    text-align: center;
+    height: 10vh;
+  }
+  .nav_game ul {
+    display: flex;
+  }
+  .nav_game ul li{
+    list-style:none;
+  }
+  .my_info {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    background-color: #e6fffb;
+    margin: auto;
+  }
+  .my_info p {
+    margin: 0;
+  }
+   .bar_tech {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(222, 255, 33);
+    text-align: center;
+  } 
+  /*  .bar_tech p{
+       margin: 0px;
+     }  */
+  .container_tech {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 600px;
+  }
+  .my_tech {
+/*     background-color: #e6fffb;
+ */    width: 65%;
+    text-align: center;
+  }
+  .aside_tech {
+    background-color:#E6FFFB;
+    width: 35%;
+    height: auto;
+    text-align: center;
+  }
+  /* .bar_game {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(243, 163, 72);
+    text-align: center;
+  } */
+  .bar_game p {
+      margin : 0px;
+  }
+  .page_streamers {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    background-color: white;
+  }
+  .page_gamers {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    background-color: #e6fffb;
+  }
+  .page_gamers p {
+      margin : 0px;
+  }
+/* end of css mohammed + jpaul */
+
+/* css zaidun */
+   
+header {
+    height: 83vh;
+border-bottom: 0.5px solid #43d8c9
+;   
+}
+#rightDid{
+    width: 50%;
+    height: 70vh;
+float : right ;
+display: inline-block;
+margin-top:2%;
+}
+#leftDiv{
+width: 50%; 
+height: 70vh;
+}
+#logo {
+width: 60%;
+position: relative;
+margin:  10% 2% 1% 16%;
+display: inline-block;
+float: left;
+}
+#riotgames{
+width: 20%
+}
+
+#finderIcon{
+width: 7%;
+margin-left : 7%
+}
+#darkblue{
+width : 35%;
+}#sticker{
+    position: relative;
+    margin-top: 12%;
+    margin-left: 6%;
+width: 12%;
+display: inline-block;
+}
+
+#riot{
+display: block;
+width: 100%;
+line-height: 0px;
+}
+#leagueoflegend{
+font-size: 50px;
+font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: bolder;
+ line-height: 0px;
+ margin-top: 15%;
+ /* identical to box height */
+
+
+color: #220E26;
+}
+#riot img{
+display: inline-block;
+margin-left: 5%;
+width: 15%;
+}
+#follow{
+font-size:15px ;
+    border : none;
+margin-top: 20px;
+display: block;
+padding: 16px 24px;
+color: white;
+background: #220E26;
+border-radius: 12px;
+
+}
+#follow:hover{
+cursor: pointer;
+color:#43d8c9
+}
+#riot p {
+font-family: 'Raleway', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 28px;
+display: inline-block;
+color: #220E26;
+}
+.nav_game ul li:hover{
+    background-color: #E6FFFB;
+/*     padding: 3.4vh;
+ */    color:black;
+ cursor: pointer;
+
+}
+.nav_game ul li{
+    position: relative;
+    padding: 3.4vh 12.4vh;
+    color:white;
+    border-left:1px solid black;
+}
+.nav_game ul li:first-child{
+    border-left: none;
+}
+.nav_game ul{
+    padding : 0px;
+    margin: auto;
+}
+.page_tech p{
+
+}
+/* jean paul */
+
+
+/*
+
+section {
+    background-color: aqua;
+    width: 100%;
+    height: 80vh;
+  } */
+  /*
+  .main_nav {
+    text-align: center;
+    background-color: darkcyan;
+    height: 10vh;
+    position: fixed;
+    width: 100%;
+  }*/
+  .container_page {
+    display: flex;
+    justify-content: row;
+    background-color: #E6FFFB;
+  } */
+  .up {
+    background-color: blue;
+    height: 300px;
+  }
+  .down {
+    background-color: blueviolet;
+    height: 300px;
+  }
+  .my_flux {
+     background-color: #E6FFFB;;
+     width: 100%;
+ margin-top: 5%;
+    height: 600px;
+  }
+  .aside {
+    width: 100%;
+  }
+  img {
+    width: 100%;
+  }
+  .button_left {
+    color: #43D8C9;
+  }
+  .button_right {
+    color: #43D8C9;
+  }
+  .gamer {
+    width: 100px;
+    height: 100px;
+  }
+
+.flux img {
+    float : left;
+    margin-left : 2%    
+}
+#header_Technlogie{
+    display: block;
+    margin-top: 3%;
+    
+}
+#header_Technlogie i{
+    float: right;
+    margin-right: 2%;
+    
+}
+h3{
+    display: inline-block;
+     margin-right: 61%;
+ }
+  h2 {
+    text-align: center;
+  }
+  .flux {
+    width: 98%;
+    border-top: 3px solid #220E26;
+    border-right: 3px solid #220E26;
+    border-bottom: 3px solid #220E26;
+    border-left: 0px;
+    border-radius: 0px 30px 30px 0px;
+    background-color: #E6FFFB;
+    
+  }
+  #flux{
+  }
+  .input {
+    /* display: inline; */
+    margin : 2%;
+  }
+  .input_img {
+    width: 50px;
+    height: 50px;
+  }
+  .comment {
+    border: 3px solid #43D8C9;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 80%;
+    height: 40px;
+    margin-left: 10px;
+  }
+  .comment2 {
+    background-color: #220E26;
+    border-radius: 10px;
+    width: 80%;
+    height: 40px;
+    margin-left: 10px;
+  }
+
+  #Desc__Technlogie{
+      margin-top: 3%;
+      padding : 7% ;
+
+  }
+  #Desc__Technlogie p{
+    padding: 0% 10% 0% 10%; 
+    text-align: justify;
+  }
+  #p_technique {
+/*     text-indent: 50px;
+ */
+  }
+  .tech_desc{
+    
+  }
+  .comment2{
+    color:white;
+  }
+  #viewVideo {
+    background: #220E26;
+border-radius: 7px;
+border: none;
+color : white;
+padding:1.5%;
+font-size: 15px;
+margin:3%;
+  }
+  .sotring {
+    display : block;
+    margin : 5%;
+    background: #220E26;
+border-radius: 7px;
+border : none ;
+color : white;
+  }
+/*
+
+
+
+*/

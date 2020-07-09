@@ -21,7 +21,7 @@
           <a href="#"><img src="LOGO_TFOG.png" class="logo_tfog" alt="logo tfog"/></a>
           <p><a href="#">Event</a></p>
           <p><a href="#">Streamers</a></p>
-          <p><a href="#">Jeux<a/></p>
+          <p><a href="#">Jeux</a></p>
           <p><a href="#">Mes follow</a></p>
           <div class="block_search">
             <a href="#"><i class="fas fa-search"></i></a>
@@ -47,17 +47,16 @@
       </div>
       <nav class="nav_game">
         <ul>
-          <li><a href="#my_info">Information</a></li>
-          <li><a href="#page_tech">Techniques</a></li>
-          <li><a href="#page_streamers">Streamers</a></li>
-          <li><a href="#page_gamers">Gamers</a></li>
+         <li><button id="button1" onclick="showHideElement(1)">Info par default</button></li> 
+         <li><button id="button1" onclick="showHideElement(2)">Page jeux</button></li> 
+         <li><button id="button1" onclick="showHideElement(3)">Info streamer/Gamers</button></li> 
         </ul>
       </nav>
     </header>
-    <div id="my_info" class="my_info">
-      <p>1)-Information</p>
+    <div id="divArticle1" class="my_info">
+      <p>1)-INFO DESCRIPTION.</p>
     </div>
-    <!-- <div id="page_tech" class="page_tech">
+    <div id="divArticle2" class="page_tech">
       <div class="bar_tech">
         <p>2)-BAR TECH.</p>
       </div> -->
@@ -69,9 +68,9 @@
           <p>2)-BARRE/FILTRE</p>
         </div>
       </div>
-    <!-- </div> -->
-    <div id="page_streamers" class="page_platform">
-      <!--  <div class="bar_game">
+    </div>
+    <div id="divArticle3" class="page_platform">
+      <div class="bar_game">
         <p>3&4)-BARRE GAME.</p>
       </div> -->
       <div class="page_streamers">
@@ -81,5 +80,40 @@
     <div class="page_gamers">
       <p>4)Gamers</p>
     </div>
+
   </body>
+  
+  <script>
+ /**
+  * 8/7/2020
+  * @zaidun   
+  **/
+ window.onload = function() {
+    hideElement();
+};
+
+function hideElement()
+{
+    document.getElementById("divArticle1").style.display="none";        
+    document.getElementById("divArticle2").style.display="none";        
+    document.getElementById("divArticle3").style.display="none";        
+}
+
+function showHideElement(idNumber)
+{
+    hideElement();
+
+    let divArticle = document.getElementById("divArticle"+idNumber);        
+
+    if (divArticle.style.display == "none") 
+    {
+        divArticle.style.display = "block";
+    }else {
+        divArticle.style.display = "none";
+    }
+}
+ 
+
+
+  </script>
 </html>
