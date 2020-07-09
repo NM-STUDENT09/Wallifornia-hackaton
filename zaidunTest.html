@@ -63,10 +63,10 @@
 
       <nav class="nav_game">
         <ul>
-         <li onclick="showHideElement(1)">Information</li> 
-         <li onclick="showHideElement(2)">Techniques</li> 
-         <li onclick="showHideElement(3)">Streamers</li> 
-         <li onclick="showHideElement(4)">Gamers</li> 
+         <li class="menuOfli" onclick="showHideElement(1)">Information</li> 
+         <li class="menuOfli"onclick="showHideElement(2)">Techniques</li> 
+         <li class="menuOfli"onclick="showHideElement(3)">Streamers</li> 
+         <li class="menuOfli"onclick="showHideElement(4)">Gamers</li> 
         </ul>
       </nav>
     </header>
@@ -74,15 +74,67 @@
       <p>1)-INFO DESCRIPTION.</p>
     </div>
     <div id="divArticle2" class="page_tech">
-      <div class="bar_tech">
+    <!--   <div class="bar_tech">
         <p>2)-BAR TECH.</p>
-      </div>
+      </div> -->
       <div id="page_tech" class="container_tech">
         <div class="my_tech">
           <p>2)Techniques</p>
+          
+            <!-- <nav class="main_nav">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quaerat est asperiores
+              corrupti nostrum expedita magnam hic quidem a. Corrupti nihil minima quasi quidem esse placeat ducimus dicta quae
+              magnam.</nav> -->
+            <section class="ban">
+              <!-- <button class="button_left">&#10094;</button>
+              <button class="button_right">&#10095;</button> -->
+            </section>
+         
+          <main>
+            <div class="container_page">
+              <div class="my_flux">
+<!--                 <h2>Flux</h2>
+ -->                <article class="flux">
+                <div id="header_Technlogie">
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <i class="fas fa-times"></i>
+
+
+                     <img src="wallifornia-hackaton/img/Photo.png" alt="gamer" class="gamer">
+                     <h3>Jack Poppins</h3>
+                </div>
+                 
+                  <p>Streaming media is multimedia that is constantly received by and presented to an end-user while being
+                    delivered by a provider. The verb "to stream" refers to the process of delivering or obtaining media in this
+                    manner;[clarification needed] the term refers to the delivery method of the medium, rather than the medium
+                    itself, and is an alternative to file downloading, a process in which the end-user obtains the entire file
+                    for the content before watching or listening to it.
+                  </p>
+                  <div class="input">
+                    <img src="wallifornia-hackaton/img/Photo 2.png" alt="input_profil" class="input_img">
+                    <input type="text" class="comment">
+                  </div>
+                  <div class="input">
+                    <img src="wallifornia-hackaton/img/Photo 3.png" alt="input_profil" class="input_img">
+                    <input type="text" class="comment2">
+                  </div>
+                  
+                </article>
+             
+              </div>
+           
+            </div>
+          </main>
         </div>
         <div class="aside_tech">
           <p>2)-BARRE/FILTRE</p>
+          <div class="aside">
+            <article class="up">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem iste ea maiores deserunt
+              voluptatibus, praesentium qui. Excepturi, hic eum voluptates officia a dolorem placeat atque consectetur,
+              exercitationem modi in itaque!</article>
+            <article class="down">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi neque velit corporis,
+              libero eligendi est vel dicta minus sunt quod officiis deleniti tempore explicabo earum ipsam nesciunt hic
+              numquam quasi.</article>
+          </div>
         </div>
       </div>
     </div>
@@ -123,8 +175,13 @@ function hideElement()
 function showHideElement(idNumber)
 {
     hideElement();
-
-    let divArticle = document.getElementById("divArticle"+idNumber);        
+    document.getElementsByClassName("menuOfli")[0].style.backgroundColor = "#43D8C9";
+    document.getElementsByClassName("menuOfli")[1].style.backgroundColor = "#43D8C9";
+    document.getElementsByClassName("menuOfli")[2].style.backgroundColor = "#43D8C9";
+    document.getElementsByClassName("menuOfli")[3].style.backgroundColor = "#43D8C9";
+    document.getElementsByClassName("menuOfli")[idNumber-1].style.backgroundColor = "#E6FFFB";
+    document.getElementsByClassName("menuOfli")[idNumber-1].style.color = "black";
+ let divArticle = document.getElementById("divArticle"+idNumber);        
 
     if (divArticle.style.display == "none") 
     {
