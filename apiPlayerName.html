@@ -1,0 +1,177 @@
+<html>
+    <head>
+  
+    </head>
+    <body>
+        <p id='showData'></p>
+        
+        <p id='msg'></p>
+        
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="response.json"></script>
+        <style>
+          td , tr {
+            border: 1px solid black;
+           
+          }td{
+            padding : 30px;
+          }
+        
+          table {
+            display: inline-block
+            ;
+          }
+          #showData {
+            display: inline-block
+            ;
+          }
+          #msg{
+            display: inline-block
+            ;
+          }
+          .imageTable{
+            width: 30%;
+          }
+        </style>
+        <script>
+
+/* https://br1.api.riotgames.com/tft/league/v1/challenger?api_key=RGAPI-dec51e4a-10b0-43b6-a245-5d22b66c1956
+ */	// using regular methods.
+  fetch('http://127.0.0.1/TestApi.php')
+  .then(
+    function(response) {
+      if (response.status !== 200) {
+        console.log('Looks like there was a problem. Status Code: ' +
+          response.status);
+        return;
+      }
+      // Examine the text in the response
+      response.json().then(function(data) {
+        console.log(data.entries);
+        /*
+        new code
+        */
+        function tableFromJson() {
+		
+
+        let players = data.entries;
+         
+
+        var col = [];
+        for (var i = 0; i < players.length; i++) {
+            for (var key in players[i]) {
+                if (col.indexOf(key) === -1) {
+                    col.push(key);
+                }
+            }
+        }
+
+        // Create a table.
+        var table = document.createElement("table");
+
+        // Create table header row using the extracted headers above.
+        var tr = table.insertRow(-1);                     // table row.
+
+        for (var i = 0; i < 1 ; i++) {
+            var th = document.createElement("th");      // table header.
+            th.innerHTML = col[i];
+            tr.appendChild(th);
+        }
+        // add json data to the table as rows.
+        for (var i = 0; i < 10; i++) {
+
+            tr = table.insertRow(-1);
+          /*colonne*/
+            for (var j = 1; j < 2; j++) {
+                var tabCell = tr.insertCell(-1);
+                tabCell.innerHTML = players[i][col[j]];
+
+            }
+        }
+
+        // Now, add the newly created table with json data, to a container.
+        var divShowData = document.getElementById('showData');
+        divShowData.innerHTML = "";
+        divShowData.appendChild(table);
+
+    }
+    tableFromJson();
+        /*
+        end of new code
+        */
+        //console.log(data.entries[0].summonerName);
+        
+      });
+    }
+  )
+  .catch(function(err) {
+    console.log('Fetch Error :-S', err);
+  }); 
+
+    
+    </script>
+
+<table>
+ 
+  <tr>
+   
+    <td> <img src="./User1.png" alt="" class="imageTable"> </td>
+    <td>99548/h</td>
+    <td>+</td>
+  </tr>
+  <tr>
+    
+    <td>  <img src="./User1.png" alt="" class="imageTable">  </td>
+    <td>80548/h</td>
+        <td>+</td>
+  </tr>
+  <tr>
+    
+    <td>  <img src="./User1.png" alt="" class="imageTable">  </td>    <td>2248/h</td>
+    <td>+</td>
+  </tr>
+  <tr>
+    
+    <td>  <img src="./User1.png" alt="" class="imageTable">  </td>    <td>2568/h</td>
+        <td>+</td>
+  </tr>
+  <tr>
+    
+    <td>  <img src="./User1.png" alt="" class="imageTable">  </td>
+    <td>98548/h</td>
+    <td>+</td>
+  </tr>
+  <tr>
+    <td>  <img src="./User1.png" alt="" class="imageTable">  </td>
+    <td>6948/h</td>
+
+    <td>+</td>
+  </tr>
+  <tr>
+    
+    <td>  <img src="./User1.png" alt="" class="imageTable">  </td>
+    <td>1548/h</td>
+    <td>+</td>
+  </tr>
+  <tr>
+    
+    <td>  <img src="./User1.png" alt="" class="imageTable">  </td>   <td>2748/h</td>
+    <td>+</td>
+  </tr>
+  <tr>
+    
+    <td>  <img src="./User1.png" alt="" class="imageTable">  </td>
+    <td>25598/h</td>
+    <td>+</td>
+  </tr>
+  <tr>
+    
+    <td>  <img src="./User1.png" alt="" class="imageTable">  </td>    <td>25548/h</td>
+    <td>+</td>
+  </tr>
+  <!--  -->
+ 
+</table>
+</body>
+
+</html>
